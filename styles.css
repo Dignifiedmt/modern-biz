@@ -309,7 +309,7 @@ main {
 /* Hero Section */
 .hero {
     background: 2em(rgba(108, 99, 255, 0.7), rgba(255, 101, 132, 0.5)),
-        url("images/hero.png") no-repeat center center/cover;
+        url("./images/hero.png") no-repeat center center/cover;
     height: 100vh;
     min-height: 600px;
     color: var(--white);
