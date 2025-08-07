@@ -285,7 +285,7 @@ img {
 
     .nav__link:hover,
     .nav__link.active {
-        background: var(--secondary-color);
+        background: var(--accent-color);
         color: var(--white);
     }
 
