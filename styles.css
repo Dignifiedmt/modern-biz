@@ -302,6 +302,10 @@ img {
     }
 }
 
+main {
+    padding: 2em;
+    margin: 2em 0.5em;
+}
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(108, 99, 255, 0.7), rgba(255, 101, 132, 0.5)),
