@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Discover our comprehensive business services" />
+        <title>ModernBiz - Services</title>
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="ModernBiz Logo" width="100" />
+                </a>
+                <button class="nav-toggle" aria-label="toggle navigation" aria-expanded="false">
+                    <span class="hamburger">
+                        <span></span>
+                    </span>
+                </button>
+                <!-- <nav class="nav" data-visible="false"> -->
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">About Us</a></li>
+                        <li class="nav__item"><a href="services.html" class="nav__link active">Services</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section
+                class="page-hero"
+                style="
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                        url('images/service1.png');
+                "
+            >
+                <div class="container">
+                    <h1>Our Services</h1>
+                    <p>Comprehensive solutions tailored to your business needs</p>
+                    <div style="margin-top: 2rem">
+                        <a href="#consulting" class="btn btn--secondary">Business Consulting</a>
+                        <a href="#marketing" class="btn btn--secondary">Digital Marketing</a>
+                        <a href="#development" class="btn btn--secondary">Web Development</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services section-padding">
+                <div class="container">
+                    <div class="service" id="consulting">
+                        <div class="service__content">
+                            <h2>Business Consulting</h2>
+                            <p>
+                                Our expert consultants work closely with you to analyze your business challenges and
+                                opportunities, developing customized strategies for growth and efficiency.
+                            </p>
+                            <ul class="service__features">
+                                <li>Market analysis and competitive research</li>
+                                <li>Business process optimization</li>
+                                <li>Financial planning and strategy</li>
+                                <li>Organizational development</li>
+                                <li>Change management</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn--primary">Get a Consultation</a>
+                            <button class="btn btn--secondary request-service-btn" data-service="Business Consulting">
+                                Request Service
+                            </button>
+                        </div>
+                        <div class="service__img">
+                            <img src="images/service1.png" alt="Business consulting meeting" />
+                        </div>
+                    </div>
+
+                    <div class="service" id="marketing">
+                        <div class="service__img">
+                            <img src="images/service2.png" alt="Digital marketing strategy" />
+                        </div>
+                        <div class="service__content">
+                            <h2>Digital Marketing</h2>
+                            <p>
+                                Comprehensive digital marketing services to increase your online visibility, engage your
+                                audience, and drive conversions.
+                            </p>
+                            <ul class="service__features">
+                                <li>Search Engine Optimization (SEO)</li>
+                                <li>Pay-Per-Click (PPC) advertising</li>
+                                <li>Social media marketing</li>
+                                <li>Content marketing strategy</li>
+                                <li>Email marketing campaigns</li>
+                                <li>Analytics and performance tracking</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn--primary">Boost Your Marketing</a>
+                            <button class="btn btn--secondary request-service-btn" data-service="Digital Marketing">
+                                Request Service
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="service" id="development">
+                        <div class="service__content">
+                            <h2>Web Development</h2>
+                            <p>
+                                Custom web solutions designed to meet your business objectives, from simple websites to
+                                complex web applications.
+                            </p>
+                            <ul class="service__features">
+                                <li>Responsive website design</li>
+                                <li>E-commerce solutions</li>
+                                <li>Web application development</li>
+                                <li>Content Management Systems</li>
+                                <li>Website maintenance and support</li>
+                                <li>Performance optimization</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn--primary">Discuss Your Project</a>
+                            <button class="btn btn--secondary request-service-btn" data-service="Web Development">
+                                Request Service
+                            </button>
+                        </div>
+                        <div class="service__img">
+                            <img src="images/service3.png" alt="Web development process" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta section-padding bg-light">
+                <div class="container">
+                    <h2>Ready to Transform Your Business?</h2>
+                    <p>We offer customized packages to meet your specific needs and budget.</p>
+                    <a href="contact.html" class="btn btn--primary">Get a Free Quote</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Modal for Request Service -->
+        <div id="serviceModal" class="modal" style="display: none">
+            <div class="modal-content">
+                <span class="close-modal" tabindex="0">&times;</span>
+                <h2>Request Service</h2>
+                <form id="serviceRequestForm">
+                    <input type="hidden" name="service" id="modalServiceName" />
+                    <div class="form-group">
+                        <label for="modalName">Your Name</label>
+                        <input type="text" id="modalName" name="name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="modalEmail">Your Email</label>
+                        <input type="email" id="modalEmail" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="modalMessage">Message</label>
+                        <textarea id="modalMessage" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary">Send Request</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <button
+            id="backToTop"
+            title="Back to top"
+            style="display: none; position: fixed; bottom: 30px; right: 30px; z-index: 1200"
+            class="btn btn--primary"
+        >
+            &#8679;
+        </button>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__about">
+                        <img src="images/logo.png" alt="ModernBiz Logo" width="120" />
+                        <p>
+                            Helping businesses thrive in the digital age with innovative solutions and expert guidance.
+                        </p>
+                    </div>
+                    <div class="footer__links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__contact">
+                        <h3>Contact Us</h3>
+                        <address>
+                            <p>123 Business address<br />Abuja, fct 00000</p>
+                            <p>Phone: +234-business</p>
+                            <p>Email: info@modernbiz.com</p>
+                        </address>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p>&copy; 2025 Dev Dignified All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ModernBiz - Your trusted business solutions provider">
+    <title>ModernBiz - Home</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="ModernBiz Logo" width="100">
+            </a>
+            <button class="nav-toggle" aria-label="toggle navigation" aria-expanded="false">
+                <span class="hamburger">
+                    <span></span>
+                </span>
+            </button>
+            <nav class="nav" data-visible="false">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About Us</a></li>
+                    <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1>Innovative Solutions for Your Business</h1>
+                    <p>We help businesses grow with cutting-edge technology and strategic consulting.</p>
+                    <a href="contact.html" class="btn btn--primary">Get Started</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-preview section-padding">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <img src="images/service1.png" alt="Business Consulting" class="service-card__img">
+                        <h3>Business Consulting</h3>
+                        <p>Expert advice to help your business navigate challenges and opportunities.</p>
+                        <a href="services.html#consulting" class="btn btn--secondary">Learn More</a>
+                    </article>
+                    <article class="service-card">
+                        <img src="images/service2.png" alt="Digital Marketing" class="service-card__img">
+                        <h3>Digital Marketing</h3>
+                        <p>Comprehensive strategies to boost your online presence and customer engagement.</p>
+                        <a href="services.html#marketing" class="btn btn--secondary">Learn More</a>
+                    </article>
+                    <article class="service-card">
+                        <img src="images/service3.png" alt="Web Development" class="service-card__img">
+                        <h3>Web Development</h3>
+                        <p>Custom websites and applications tailored to your business needs.</p>
+                        <a href="services.html#development" class="btn btn--secondary">Learn More</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials section-padding bg-light">
+            <div class="container">
+                <h2>What Our Clients Say</h2>
+                <div class="testimonials-grid">
+                    <blockquote class="testimonial">
+                        <p>"ModernBiz transformed our online presence and helped us double our revenue in just six months."</p>
+                        <footer>
+                            <cite>Sarah Johnson, CEO of TechSolutions</cite>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p>"Their strategic advice was exactly what our growing company needed to scale effectively."</p>
+                        <footer>
+                            <cite>Michael Chen, Founder of GreenStart</cite>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p>"Professional, responsive, and truly understands our business objectives."</p>
+                        <footer>
+                            <cite>Lisa Rodriguez, Marketing Director</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+                <div class="clients">
+                    <img src="images/client1.png" alt="TechSolutions Logo" class="client-logo">
+                    <img src="images/client2.png" alt="GreenStart Logo" class="client-logo">
+                    <img src="images/client3.png" alt="GlobalCorp Logo" class="client-logo">
+                </div>
+            </div>
+        </section>
+
+        <section class="cta section-padding">
+            <div class="container">
+                <h2>Ready to Grow Your Business?</h2>
+                <p>Contact us today for a free consultation.</p>
+                <a href="contact.html" class="btn btn--primary">Contact Us</a>
+            </div>
+        </section>
+
+        <!-- Newsletter Subscription Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <h2>Subscribe to our Newsletter</h2>
+                <p>Get the latest updates, tips, and exclusive offers straight to your inbox.</p>
+                <form id="newsletterForm" class="newsletter-form">
+                    <input type="email" id="newsletterEmail" name="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn--primary">Subscribe</button>
+                </form>
+                <div id="newsletterMessage" class="newsletter-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__about">
+                    <img src="images/logo.png" alt="ModernBiz Logo" width="120">
+                    <p>Helping businesses thrive in the digital age with innovative solutions and expert guidance.</p>
+                </div>
+                <div class="footer__links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <address>
+                    <p>123 Business address<br>Abuja, fct 00000</p>
+                    <p>Phone: +234-business</p>
+                    <p>Email: info@modernbiz.com</p>
+                </address>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Dev Dignified All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
